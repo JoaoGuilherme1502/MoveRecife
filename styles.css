@@ -1,0 +1,177 @@
+
+
+body {
+    background-color: #0A1128;
+    color: #ffff;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Sidebar Lateral*/
+
+header {
+    width: 212px;
+    height: 100vh;
+    background-color: #0A1128;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    box-shadow: 0 4px 110.4px 0 rgba(0, 0, 0, 0.74);  /* sombra da side bar */
+}
+
+header img {
+    width: 40px;
+    margin-bottom: 40px;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+header nav > a > img {
+    width: 187px;
+}
+
+header nav .icon-nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    color: #ffff;
+    transition: 0.2s;
+}
+
+header nav .icon-nav-bar:hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+.icon-nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    gap: 4px; /* distância entre ícone e texto*/
+}
+
+.icon-nav-bar img {
+    width: 32px; /* ajuste das imagens*/
+}
+
+.icon-nav-bar p {
+    font-size: 14px;
+    margin: 0;
+    line-height: 1;
+    text-align: center;
+}
+
+/* Banner */
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 120px;  /* Espaço para side bar*/
+    background: url('/assets/mapa.png');
+    background-size: cover;
+    background: center;
+    position: relative;
+}
+
+/* camada escura */
+.mid-banner {
+    width: 520px;
+    background: #0A1128; 
+    color: white;
+    border-radius: 30px;
+    padding: 50px 40px;
+    text-align: center;
+    box-shadow: 0 0 40px rgba(0,0,0,0.25);
+}
+
+.mid-banner h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.mid-banner > p {
+    font-size: 16px;
+    opacity: 0.85;
+    margin-bottom: 35px;
+}
+
+.info-banner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px 0;
+}
+
+.info-banner img {
+    width: 22px;
+    height: 22px;
+}
+
+.info-banner p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+/* ------------------------- */
+/* TELAS WEB E MOBILE        */
+/* ------------------------- */
+
+.container-telas-web,
+.container-telas-mobile {
+    margin-left: 210px;
+    margin-top: 30px;
+    display: grid;
+    gap: 25px;
+}
+
+.container-telas-web {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1100px;
+}
+
+.container-telas-mobile {
+    grid-template-columns: repeat(6, 1fr);
+    max-width: 1200px;
+}
+
+/* ------------------------- */
+/* FOOTER                    */
+/* ------------------------- */
+
+footer {
+    margin-left: 190px;
+    margin-top: 60px;
+    padding: 40px;
+    background: #0A1128;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin-left: 0;
+}
+
+.info-contato p {
+    margin: 3px 0;
+}
+
+footer img {
+    width: 90px;
+}
