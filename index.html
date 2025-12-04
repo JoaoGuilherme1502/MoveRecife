@@ -6,11 +6,71 @@
     <title>MoveRecife</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        /* Estilização básica para a área de posts */
+        #api-section {
+            padding: 40px 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .btn-submit {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .posts-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .post-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: left;
+            position: relative;
+        }
+        .post-card h4 { margin-bottom: 10px; color: #333; }
+        .post-card p { margin-bottom: 10px; color: #666; font-size: 0.9em; }
+        .post-author { font-weight: bold; color: #555; font-size: 0.8em; }
+        .btn-delete {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
-            <a rel="https://google.com" target="_blank">
+            <a href="#" target="_blank">
                 <img src="/assets/moverecife.png" alt="Logo MoveRecife">
             </a>
             <ul>
@@ -31,6 +91,13 @@
                     </a>
                 </li>
                 <li>
+                    <a href="#comunidade">
+                        <div class="icon-nav-bar">
+                            <p>Comunidade</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
                     <a href="#contato">
                         <div class="icon-nav-bar">
                             <img src="/assets/comment-dots-bold.svg" alt="Contato">
@@ -38,82 +105,190 @@
                         </div>
                     </a>
                 </li>
-        </nav>
+            </ul> </nav>
     </header>
     <div class="content">
         <div class="banner">
-        <div class="mid-banner">
-            <h1>Transformando o Transporte Público</h1>
-            <p>Simplifique sua rota diária e evite desconforto</p>
-            <h2>Sobre a Solução</h2>
-            <div class="info-banner">
-                <img src="/assets/icon-info.svg" alt="info">
-                <p>Afaste-se de perigo e desconforto.</p>
-            </div>
-            <div class="info-banner">
-                <img src="/assets/icon-carinha-feliz.svg" alt="emoji">
-                <p>Veja quais rotas são perfeitas para você.</p>
-            </div>
-            <div class="info-banner">
-                <img src="/assets/icon-lapis.svg" alt="lapis">
-                <p>Personalize a sua experiência.</p>
+            <div class="mid-banner">
+                <h1>Transformando o Transporte Público</h1>
+                <p>Simplifique sua rota diária e evite desconforto</p>
+                <h2>Sobre a Solução</h2>
+                <div class="info-banner">
+                    <img src="/assets/icon-info.svg" alt="info">
+                    <p>Afaste-se de perigo e desconforto.</p>
+                </div>
+                <div class="info-banner">
+                    <img src="/assets/icon-carinha-feliz.svg" alt="emoji">
+                    <p>Veja quais rotas são perfeitas para você.</p>
+                </div>
+                <div class="info-banner">
+                    <img src="/assets/icon-lapis.svg" alt="lapis">
+                    <p>Personalize a sua experiência.</p>
+                </div>
             </div>
         </div>
-    </div>
-    <h3 id="solucao">O problema</h3>
-    <p>O transporte público no Recife se encontra em séria situação de descaso, 
-        e isso resulta na população que usufrui desse direito público se depara 
-        com desconforto e estresse ao decorrer do dia-a-dia. A aplicação é um 
-        método de amenizar isso e trazer uma experiência mais agradável e eficiente 
-        pro transporte.
-    </p>
-    <h3>Público-Alvo</h3>
-    <p>
-        A aplicação é voltada para pessoas que usam o transporte público no seu 
-        dia-a-dia e desejam ter uma experiência de transporte mais confortável, 
-        pontual e segura.
-    </p>
-    <h3>Nossa Solução</h3>
-    <p>
-        A MoveRecife é um assistente digital que te auxilia em planejar rotas usando 
-        o transporte público sem as desvantagens comuns do mesmo. Veja a situação de 
-        linhas, estimativa de horário de chegada e personalize sua experiência.
+        <h3 id="solucao">O problema</h3>
+        <p>O transporte público no Recife se encontra em séria situação de descaso...</p>
+        
+        <h3>Público-Alvo</h3>
+        <p>A aplicação é voltada para pessoas que usam o transporte público...</p>
+        
+        <h3>Nossa Solução</h3>
+        <p>A MoveRecife é um assistente digital que te auxilia em planejar rotas...</p>
+        
+        <h2 id="prototipo">Protótipo</h2>
+        <h3>Web</h3>
+        <div class="container-telas-web">
+            <img src="/assets/tela-inicial-web.png" alt="Tela Inicial">
+            <img src="/assets/tela-linhas-web.png" alt="Visualização de Linhas">
+            <img src="/assets/tela-rotas-web.png" alt="Visualização de Rotas">
+            <img src="/assets/tela-report-web.png" alt="Reportar Problema">
+        </div>
+        <h3>Mobile</h3>
+        <div class="container-telas-mobile">
+            <img src="/assets/tela-inicial-mobile.png" alt="Tela Inicial">
+            <img src="/assets/tela-report-mobile.png" alt="Reportar Problema">
+            <img src="/assets/tela-linha-especifica-mobile.png" alt="Visualização de Linha Específica">
+            <img src="/assets/tela-rotas-mobile.png" alt="Visualização de Rotas">
+            <img src="/assets/tela-menu-usuario-mobile.png" alt="Menu do Usuário">
+            <img src="/assets/tela-linhas-favoritas-mobile.png" alt="Linhas Favoritas">
+        </div>
 
-        Veja como chegar ao seu destino de forma mais confortável e contribua com 
-        informações para auxiliar a base de usuários.
-    </p>
-    <h2 id="prototipo">Protótipo</h2>
-    <h3>Web</h3>
-    <div class="container-telas-web">
-        <img src="/assets/tela-inicial-web.png" alt="Tela Inicial">
-        <img src="/assets/tela-linhas-web.png" alt="Visualização de Linhas">
-        <img src="/assets/tela-rotas-web.png" alt="Visualização de Rotas">
-        <img src="/assets/tela-report-web.png" alt="Reportar Problema">
+        <section id="comunidade" style="margin-top: 50px;">
+            <div id="api-section">
+                <h2>Mural da Comunidade</h2>
+                <p>Deixe seu feedback ou relato sobre o transporte.</p>
+
+                <div class="form-container">
+                    <h3>Novo Relato</h3>
+                    <form id="postForm">
+                        <input type="text" id="author" placeholder="Seu Nome (Autor)" required>
+                        <input type="text" id="title" placeholder="Título do relato" required>
+                        <textarea id="content" rows="4" placeholder="O que aconteceu?" required></textarea>
+                        <button type="submit" class="btn-submit">Publicar</button>
+                    </form>
+                </div>
+
+                <div id="postsList" class="posts-container">
+                    <p>Carregando posts...</p>
+                </div>
+            </div>
+        </section>
+        <footer id="contato">
+            <p>© 2025 MoveRecife. Todos os direitos reservados.</p>
+            <div class="info-contato">
+                <p>Email: MoveRecife@gmail.com</p>
+                <p>Telefone: (81) 99999-9999</p>
+                <p>Endereço: Rua Exemplo, 123 - Recife, PE</p>
+            </div>
+            <img src="/assets/logo-mr.svg" alt="Logo MoveRecife">
+        </footer>
     </div>
-    <h3>Mobile</h3>
-    <div class="container-telas-mobile">
-        <img src="/assets/tela-inicial-mobile.png" alt="Tela Inicial">
-        <img src="/assets/tela-report-mobile.png" alt="Reportar Problema">
-        <img src="/assets/tela-linha-especifica-mobile.png" alt="Visualização de Linha Específica">
-        <img src="/assets/tela-rotas-mobile.png" alt="Visualização de Rotas">
-        <img src="/assets/tela-menu-usuario-mobile.png" alt="Menu do Usuário">
-        <img src="/assets/tela-linhas-favoritas-mobile.png" alt="Linhas Favoritas">
-    </div>
-    <footer id="contato">
-        <p>© 2025 MoveRecife. Todos os direitos reservados.</p>
-        <div class="info-contato">
-            <p>
-                Email: MoveRecife@gmail.com
-            </p>
-            <p>
-                Telefone: (81) 99999-9999
-            </p>
-            <p>
-                Endereço: Rua Exemplo, 123 - Recife, PE
-            </p>
-        </div>
-        <img src="/assets/logo-mr.svg" alt="Logo MoveRecife">
-    </footer>
-    </div>
+
+    <script>
+        // CONFIGURAÇÃO
+        // Se estiver rodando localmente o backend, mude para 'http://localhost:3000/api/posts'
+        // Baseado no print, o endpoint é /api/posts
+        const API_URL = 'http://localhost:3000/api/posts'; 
+
+        // 1. GET: Função para buscar e listar posts
+        async function fetchPosts() {
+            const container = document.getElementById('postsList');
+            try {
+                // Faz a requisição GET
+                const response = await fetch(API_URL);
+                
+                if (!response.ok) throw new Error('Erro ao buscar posts');
+
+                const posts = await response.json();
+                
+                container.innerHTML = ''; // Limpa lista atual
+
+                if(posts.length === 0) {
+                    container.innerHTML = '<p>Nenhum relato encontrado.</p>';
+                    return;
+                }
+
+                // Cria o HTML para cada post
+                posts.forEach(post => {
+                    const postElement = document.createElement('div');
+                    postElement.className = 'post-card';
+                    postElement.innerHTML = `
+                        <h4>${post.title}</h4>
+                        <p>${post.content}</p>
+                        <p class="post-author">Por: ${post.author}</p>
+                        <button onclick="deletePost('${post.id}')" class="btn-delete">Excluir</button>
+                    `;
+                    container.appendChild(postElement);
+                });
+            } catch (error) {
+                console.error(error);
+                container.innerHTML = '<p>Erro ao carregar os posts. Verifique se a API está rodando.</p>';
+            }
+        }
+
+        // 2. POST: Função para criar novo post
+        document.getElementById('postForm').addEventListener('submit', async (e) => {
+            e.preventDefault(); // Evita o recarregamento da página
+
+            // Pega os dados dos inputs
+            const author = document.getElementById('author').value;
+            const title = document.getElementById('title').value;
+            const content = document.getElementById('content').value;
+
+            // Monta o objeto conforme o Schema da imagem
+            const newPost = {
+                title: title,
+                content: content,
+                author: author
+            };
+
+            try {
+                const response = await fetch(API_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(newPost)
+                });
+
+                if (response.ok) {
+                    alert('Relato publicado com sucesso!');
+                    document.getElementById('postForm').reset(); // Limpa formulário
+                    fetchPosts(); // Recarrega a lista
+                } else {
+                    alert('Erro ao publicar. Verifique os dados.');
+                }
+            } catch (error) {
+                console.error('Erro:', error);
+                alert('Erro de conexão com a API.');
+            }
+        });
+
+        // 3. DELETE: Função para deletar um post
+        async function deletePost(id) {
+            if(!confirm('Tem certeza que deseja excluir este relato?')) return;
+
+            try {
+                // Faz a requisição DELETE passando o ID na URL
+                const response = await fetch(`${API_URL}/${id}`, {
+                    method: 'DELETE'
+                });
+
+                if (response.ok) {
+                    alert('Post deletado!');
+                    fetchPosts(); // Recarrega a lista
+                } else {
+                    alert('Erro ao deletar post.');
+                }
+            } catch (error) {
+                console.error('Erro:', error);
+            }
+        }
+
+        // Carrega os posts assim que a página abre
+        document.addEventListener('DOMContentLoaded', fetchPosts);
+    </script>
+    const API_URL = 'http://localhost:3000/api/posts';
 </body>
 </html>
