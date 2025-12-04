@@ -10,7 +10,7 @@ body {
 /* Sidebar Lateral*/
 
 header {
-    width: 150px;
+    width: 120px;
     height: 100vh;
     background-color: #0A1128;
     position: fixed;
@@ -37,7 +37,7 @@ header nav {
 }
 
 header nav > a > img {
-    width: 130px;
+    width: 90px;
 }
 
 header nav .icon-nav-bar {
@@ -65,7 +65,7 @@ header nav .icon-nav-bar:hover {
 }
 
 .icon-nav-bar img {
-    width: 40px; /* ajuste das imagens*/
+    width: 30px; /* ajuste das imagens*/
 }
 
 .icon-nav-bar p {
@@ -74,7 +74,7 @@ header nav .icon-nav-bar:hover {
 }
 
 .content {
-    margin-left: 150px;
+    margin-left: 120px;
 }
 
 /* Banner */
@@ -100,7 +100,7 @@ header nav .icon-nav-bar:hover {
 .mid-banner {
     width: 680px;
     height: 600px;
-    margin-top: 200px;
+    margin-top: 120px;
     background: #0A1128; 
     color: white;
     border-radius: 50px;
@@ -121,31 +121,41 @@ header nav .icon-nav-bar:hover {
 
 .mid-banner > p {
     font-size: 16px;
-    opacity: 0.85;
+    font-weight: 600;
     padding: 12px;
 }
 
 .info-banner {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 6px;
-    margin-bottom: 12px 0;
+    margin-bottom: 15px;
+    margin-left: 120px;
+    padding: 20px;
 }
 
 .info-banner img {
-    width: 22px;
-    height: 22px;
+    width: 32px;
+    margin-right: 15px;
 }
 
 .info-banner p {
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    padding-left: 0;
+    flex-grow: 1;
+    text-align: left;
 }
 
-h3 {
-    margin-top: 120px;
-    padding-left: 40px;
-    font-size: 30px;
+.button-solucao {
+    width: 300px;
+    height: 120px;
+    font-size: 24px;
+    border-radius: 14px;
+    background-color: #0A1128;
+    color: #ffff;
+    box-shadow: 0 4px 12.8px 0 #000;
+    border: none;
 }
 
 p {
@@ -154,22 +164,81 @@ p {
     margin-bottom: 20px;
 }
 
-.container-telas-web,
+.about h3 {
+    margin-top: 120px;
+    padding-left: 80px;
+    font-size: 30px;
+}
+
+.about h4 {
+    font-size: 24px;
+    padding: 20px;
+    padding-left: 210px;
+}
+
+.about p {
+    padding: 20px;
+    font-size: 20px;
+    padding-left: 210px;
+    max-width: 1100px;
+}
+
+.paragrafo {
+    padding: 20px;
+    font-size: 20px;
+    padding-left: 210px;
+    max-width: 1100px;
+    margin-top: 0;
+    margin-bottom: -50px;
+}
+
+.container-prototipo {
+    align-items: center;
+}
+
+.container-prototipo h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.container-prototipo p {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 20px;
+    padding-left: 300px;
+}
+
+.container-prototipo h3 {
+    text-align: center;
+    padding: 20px;
+    font-size: 36px;
+}
+
+.container-telas-web {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 20px;
+    margin-top: 25px;
+    padding-left: 190px;
+}
+
+.container-telas-web img {
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
 .container-telas-mobile {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
     margin-top: 25px;
-}
-
-.container-telas-web img {
-    width: 45%;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding-left: 210px;
 }
 
 .container-telas-mobile img {
-    width: 180px;
+    width: 250px;
     border-radius: 14px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
@@ -181,19 +250,29 @@ footer {
     color: white;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
+    font-size: 14px; 
 }
 
-footer img {
-    height: 60px;
+.licenca p {
+    padding-left: 150px;
 }
 
 .info-contato {
     display: flex;
     flex-direction: column;
-    gap: 0px;
+    gap: 5px; 
+    text-align: left; 
+    padding-right: 100px;
 }
 
 .info-contato p {
-    margin: 5px 0;
+    margin: 0; 
+    padding: 0; 
+}
+
+footer img {
+    height: 60px;
+    margin: 0;
+    padding-right: 80px; 
 }
