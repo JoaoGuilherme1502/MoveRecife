@@ -96,7 +96,7 @@ header p {
         rgba(10, 17, 40, 0.7) 70%, 
         rgba(10, 17, 40, 1) 100%    
     ),
-    url('/assets/mapa.png') center/cover no-repeat;
+    url('assets/mapa.png') center/cover no-repeat;
     position: relative;
 }
 
