@@ -265,38 +265,23 @@ header p {
     border-radius: 14px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
- /* Footer */
-footer {
-    margin-top: 80px;
-    padding: 40px;
-    background-color: #031D44;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    font-size: 14px; 
-}
-
-.licenca p {
-    padding-left: 110px;
-}
-
-.info-contato {
-    display: flex;
-    flex-direction: column;
-    gap: 5px; 
-    text-align: left; 
-    padding-right: 210px;
-}
-
-.info-contato p {
-        margin: 0; 
-    padding: 0; 
-}
 
 .api-section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
     padding: 40px;
     color: white;
+}
+
+.api-section h2 {
+    font-size: 36px;
+}
+
+.api-section p {
+    padding: 12px;
+    font-size: 16px;
 }
 
 .form-container {
@@ -304,6 +289,7 @@ footer {
     padding: 30px;
     border-radius: 15px;
     max-width: 600px;
+    margin: 40px auto;
     margin-bottom: 40px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
@@ -347,8 +333,9 @@ footer {
 
 /* Lista de Posts */
 .posts-grid {
+    margin: 40px auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -403,6 +390,35 @@ footer {
 .btn-delete:hover {
     background-color: #cc0000;
 }    
+
+/* Footer */
+footer {
+    margin-top: 80px;
+    padding: 40px;
+    background-color: #031D44;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    font-size: 14px; 
+}
+
+.licenca p {
+    padding-left: 110px;
+}
+
+.info-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+    text-align: left; 
+    padding-right: 210px;
+}
+
+.info-contato p {
+        margin: 0; 
+    padding: 0; 
+}
 
 /* Logo do footer*/
 footer img {
