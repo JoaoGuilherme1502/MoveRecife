@@ -569,4 +569,114 @@ footer img {
     .container-telas-web img {
         width: 38%;
     }
+    margin: 5px 0;
+}
+.api-section {
+    padding: 40px;
+    color: white;
+}
+
+.form-container {
+    background-color: #13224a; /* Um pouco mais claro que o fundo */
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 600px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.form-container h3 {
+    margin-top: 0;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #2a3d6f;
+    border-radius: 8px;
+    background-color: #0A1128;
+    color: white;
+    font-size: 16px;
+}
+
+.form-input::placeholder {
+    color: #8fa3d6;
+}
+
+.btn-submit {
+    background-color: #00bf63; /* Verde destaque */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background-color: #009e52;
+}
+
+/* Lista de Posts */
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.post-card {
+    background-color: #ffffff;
+    color: #0A1128; /* Texto escuro no card branco para contraste */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post-card h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #0A1128;
+}
+
+.post-card p {
+    padding-left: 0; /* Remove o padding global do p */
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.post-author {
+    font-size: 12px;
+    color: #666;
+    font-weight: bold;
+    margin-top: auto;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.btn-delete {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    align-self: flex-end; /* Joga o botão para a direita */
+    margin-top: 10px;
+}
+
+.btn-delete:hover {
+    background-color: #cc0000;
 }
