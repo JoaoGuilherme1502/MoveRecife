@@ -163,56 +163,95 @@ header p {
 }
 
 /* Sobre nós */
+
 .about {
-    padding-bottom: 40px;
+    padding-bottom: 50px;
 }
 
 .about h3 {
     margin-top: 120px;
     font-size: 30px;
-    padding-left: 150px; 
-    max-width: 1200px;
-    margin-left: 0; 
-    margin-right: auto;
+    max-width: 900px; 
+    margin: 120px auto 20px auto; 
+    padding-left: 20px; 
+    padding-right: 20px;
+    text-align: left; 
 }
 
 .about p,
 .paragrafo {
     font-size: 20px;
-    padding: 20px 40px 20px 230px; 
-    max-width: 1200px; 
-    margin-left: 0; 
-    margin-right: auto; 
+    line-height: 1.6; 
+    max-width: 900px; 
+    margin: 0 auto 20px auto; 
+    padding: 0 20px; 
     box-sizing: border-box;
-}
-
-.paragrafo {
-    margin-bottom: 0; 
 }
 
 .about ul {
     list-style: none;
     padding: 0;
     margin-bottom: 40px;
-
-    margin-left: 0; 
+    margin-left: auto; 
     margin-right: auto;
-    max-width: 1200px;
-}
-
-.about ul li {
-    margin-bottom: 20px;
+    max-width: 900px;
+    padding: 0 20px;
 }
 
 .about h4 {
     font-size: 24px;
-    padding: 20px 40px 0 35%; 
-    margin: 0;
+    max-width: 900px;
+    margin: 40px auto 0 auto;
+    padding: 0 20px; 
+    text-align: left;
 }
 
+/* Parágrafos P dentro da lista (ODS) */
 .about ul li p {
-    padding: 0 40px 20px 35%; 
-    max-width: 1200px;
+    max-width: 900px;
+    margin: 0 auto 20px auto; 
+    padding: 0 20px; 
+    line-height: 1.5;
+}
+
+.text-section-box {
+    background-color: #13224a; 
+    max-width: 900px;
+    margin: 80px auto; 
+    padding: 30px 40px; 
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.about .text-section-box h3 {
+    margin-top: 0; 
+    margin-bottom: 15px;
+    padding: 0; 
+    max-width: none; 
+}
+
+.about .text-section-box p, 
+.about .text-section-box .paragrafo {
+    padding: 0; 
+    max-width: none; 
+    margin: 0 0 20px 0; 
+}
+
+.text-section-box ul {
+    /* Garante que a lista comece no canto da caixa */
+    margin: 15px 0 0 0;
+    padding: 0;
+    max-width: none;
+}
+
+.text-section-box ul li h4,
+.text-section-box ul li p {
+    /* Zera a margem lateral que vinha */
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: none;
 }
 
 /* Protótipo */
@@ -249,8 +288,9 @@ header p {
 
 .mockup h4 {
     color: #00bf63; 
-    font-size: 18px;
+    font-size: 24px;
     margin-top: 15px;
+    text-align: left;
 }
 
 .mockup img {
