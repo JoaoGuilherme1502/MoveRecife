@@ -6,18 +6,19 @@
     <title>MoveRecife</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
-            <a rel="https://google.com" target="_blank">
-                <img src="/assets/moverecife.png" alt="Logo MoveRecife">
+            <a href="#banner">
+                <img src="assets/moverecife.png" alt="Logo MoveRecife">
             </a>
             <ul>
                 <li>
                     <a href="#solucao">
                         <div class="icon-nav-bar">
-                            <img src="/assets/Frame.svg" alt="Sobre Nós">
+                            <img src="assets/Frame.svg" alt="Sobre Nós">
                             <p>Sobre Nós</p>
                         </div>
                     </a>
@@ -25,7 +26,7 @@
                 <li>
                     <a href="#prototipo">
                         <div class="icon-nav-bar">
-                            <img src="/assets/edit.svg" alt="Protótipo">
+                            <img src="assets/edit.svg" alt="Protótipo">
                             <p>Protótipo</p>
                         </div>
                     </a>
@@ -33,87 +34,137 @@
                 <li>
                     <a href="#contato">
                         <div class="icon-nav-bar">
-                            <img src="/assets/comment-dots-bold.svg" alt="Contato">
+                            <img src="assets/comment-dots-bold.svg" alt="Contato">
                             <p>Contato</p>
                         </div>
                     </a>
                 </li>
+                <li>
+                    <a href="#comunidade">
+                    <div class="icon-nav-bar">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        <p>Comunidade</p>
+                    </div>
+                    </a>
+                </li>
+            </ul>
         </nav>
     </header>
     <div class="content">
-        <div class="banner">
-        <div class="mid-banner">
-            <h1>Transformando o Transporte Público</h1>
-            <p>Simplifique sua rota diária e evite desconforto</p>
-            <h2>Sobre a Solução</h2>
-            <div class="info-banner">
-                <img src="/assets/icon-info.svg" alt="info">
-                <p>Afaste-se de perigo e desconforto.</p>
-            </div>
-            <div class="info-banner">
-                <img src="/assets/icon-carinha-feliz.svg" alt="emoji">
-                <p>Veja quais rotas são perfeitas para você.</p>
-            </div>
-            <div class="info-banner">
-                <img src="/assets/icon-lapis.svg" alt="lapis">
-                <p>Personalize a sua experiência.</p>
+        <div class="banner" id="banner">
+            <div class="mid-banner">
+                <h1>Transformando o Transporte Público</h1>
+                <p>Simplifique sua rota diária e evite desconforto</p>
+                <h2>Sobre a Solução</h2>
+                <div class="info-banner">
+                    <img src="assets/icon-info.svg" alt="info">
+                    <p>Afaste-se de perigo e desconforto.</p>
+                </div>
+                <div class="info-banner">
+                    <img src="assets/icon-carinha-feliz.svg" alt="emoji">
+                    <p>Veja quais rotas são perfeitas para você.</p>
+                </div>
+                <div class="info-banner">
+                    <img src="assets/icon-lapis.svg" alt="lapis">
+                    <p>Personalize a sua experiência.</p>
+                </div>
+                <a href="#solucao">
+                    <button class="button-solucao">Conheça nossa Solução</button>
+                </a>
             </div>
         </div>
-    </div>
-    <h3 id="solucao">O problema</h3>
-    <p>O transporte público no Recife se encontra em séria situação de descaso, 
-        e isso resulta na população que usufrui desse direito público se depara 
-        com desconforto e estresse ao decorrer do dia-a-dia. A aplicação é um 
-        método de amenizar isso e trazer uma experiência mais agradável e eficiente 
-        pro transporte.
-    </p>
-    <h3>Público-Alvo</h3>
-    <p>
-        A aplicação é voltada para pessoas que usam o transporte público no seu 
-        dia-a-dia e desejam ter uma experiência de transporte mais confortável, 
-        pontual e segura.
-    </p>
-    <h3>Nossa Solução</h3>
-    <p>
-        A MoveRecife é um assistente digital que te auxilia em planejar rotas usando 
-        o transporte público sem as desvantagens comuns do mesmo. Veja a situação de 
-        linhas, estimativa de horário de chegada e personalize sua experiência.
+        <div class="about">
+            <div class="text-section-box">
+                <h3 id="solucao">O problema</h3>
+                <p class="paragrafo">
+                    O transporte público no Recife se encontra em séria situação de descaso, e isso resulta na população que usufrui desse direito público se depara com desconforto e estresse ao decorrer do dia-a-dia. A aplicação é um método de amenizar isso e trazer uma experiência mais agradável e eficiente pro transporte.
+                </p>
+            </div>
+            <div class="text-section-box">
+                <h3>Público-Alvo</h3>
+                <p class="paragrafo">
+                    A aplicação é voltada para pessoas que usam o transporte público no seu dia-a-dia e desejam ter uma experiência de transporte mais confortável, pontual e segura.
+                </p>    
+            </div>
+            <div class="text-section-box">
+                <h3>Nossa Solução</h3>
+                <p class="paragrafo">
+                    A MoveRecife é um assistente digital que te auxilia em prlanejar rotas usando o transporte público sem as desvantagens comuns do mesmo. Veja a situação de linhas, estimativa de horário de chegada e personalize sua experiência.
 
-        Veja como chegar ao seu destino de forma mais confortável e contribua com 
-        informações para auxiliar a base de usuários.
-    </p>
-    <h2 id="prototipo">Protótipo</h2>
-    <h3>Web</h3>
-    <div class="container-telas-web">
-        <img src="/assets/tela-inicial-web.png" alt="Tela Inicial">
-        <img src="/assets/tela-linhas-web.png" alt="Visualização de Linhas">
-        <img src="/assets/tela-rotas-web.png" alt="Visualização de Rotas">
-        <img src="/assets/tela-report-web.png" alt="Reportar Problema">
-    </div>
-    <h3>Mobile</h3>
-    <div class="container-telas-mobile">
-        <img src="/assets/tela-inicial-mobile.png" alt="Tela Inicial">
-        <img src="/assets/tela-report-mobile.png" alt="Reportar Problema">
-        <img src="/assets/tela-linha-especifica-mobile.png" alt="Visualização de Linha Específica">
-        <img src="/assets/tela-rotas-mobile.png" alt="Visualização de Rotas">
-        <img src="/assets/tela-menu-usuario-mobile.png" alt="Menu do Usuário">
-        <img src="/assets/tela-linhas-favoritas-mobile.png" alt="Linhas Favoritas">
-    </div>
-    <footer id="contato">
-        <p>© 2025 MoveRecife. Todos os direitos reservados.</p>
-        <div class="info-contato">
-            <p>
-                Email: MoveRecife@gmail.com
-            </p>
-            <p>
-                Telefone: (81) 99999-9999
-            </p>
-            <p>
-                Endereço: Rua Exemplo, 123 - Recife, PE
-            </p>
+                    Veja como chegar ao seu destino de forma mais confortável e contriubua informações para auxiliar a base de usuários.
+                </p>    
+            </div>
+            <div class="text-section-box">
+                <h3>ODS Impactadas</h3>
+                <ul>
+                    <li>
+                        <h4>ODS 9 – Indústria, Inovação e Infraestrutura</h4>
+                        <p>Fomentar tecnologia e infraestrutura eficiente.</p>
+                    </li>
+                    <li>
+                        <h4>ODS 11 – Cidades e Comunidades Sustentáveis</h4>
+                        <p>Melhorar mobilidade, moradia, segurança e serviços urbanos.</p>
+                    </li>
+                    <li>
+                        <h4>ODS 17 – Parcerias e Meios de Implementação</h4>
+                        <p>Estimular colaboração entre setores públicos e privados.</p>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <img src="/assets/logo-mr.svg" alt="Logo MoveRecife">
-    </footer>
+        <div class="container-prototipo">
+            <h2 id="prototipo">Protótipo</h2>
+            <div class="prototipos-wrapper">
+                <div class="mockup web-mockup">
+                <img src="assets/Tela logado-front.png" alt="moldura laptop">
+                <h4>Protótipo Web</h4>
+            </div>
+            <div class="mockup mobile-mockup">
+                <img src="assets/Menu Inicial (1)-portrait.png" alt="moldura celular">
+                <h4>Protótipo Mobile</h4>
+            </div>
+            </div>
+        </div>
+        <!--<div class="container-blog">
+            <h2>Blog</h2>
+        </div>-->
+        <section id="comunidade" class="api-section">
+        <h2>Mural da Comunidade</h2>
+        <p>
+            Compartilhe sua experiência no transporte público do Recife.
+        </p>
+
+        <div class="form-container">
+            <h3>Novo Relato</h3>
+            <form id="postForm">
+                <input type="text" id="author" class="form-input" placeholder="Seu Nome" required>
+                <input type="text" id="title" class="form-input" placeholder="Título do relato (ex: Atraso na linha 060)" required>
+                <textarea id="content" class="form-input" rows="4" placeholder="O que aconteceu?" required></textarea>
+                <button type="submit" class="btn-submit">Publicar Relato</button>
+            </form>
+        </div>
+
+        <h3>Relatos Recentes</h3>
+        <div id="postsList" class="posts-grid">
+            <p>Carregando relatos...</p>
+        </div>
+        </section>
+        <footer id="contato">
+            <div class="licenca">
+                <p>© 2025 MoveRecife. Todos os direitos reservados.</p>
+            </div>
+            <div class="info-contato">
+                <p>Email: MoveRecife@gmail.com</p>
+                <p>Telefone: (81) 99999-9999</p>
+                <p>Endereço: Rua Exemplo, 123 - Recife, PE</p>
+            </div>
+            <img src="assets/logo-mr.svg" alt="Logo MoveRecife">
+        </footer>
     </div>
 </body>
 </html>
