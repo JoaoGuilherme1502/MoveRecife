@@ -314,6 +314,7 @@ header p {
     justify-content: center;
     text-align: center;
     flex-direction: column;
+    margin-top: 120px;
     padding: 40px;
     color: white;
 }
@@ -510,13 +511,13 @@ footer img {
     }
 
     .mid-banner {
-        width: 60%;
-        height: auto;
+        max-width: 60%;
+        max-height: auto;
         padding: 40px 30px;
     }
 
     .info-banner {
-        max-width: 60%;
+        max-width: 55%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -536,14 +537,42 @@ footer img {
         padding-right: 40px;
     }
     
+    .text-section-box {
+        margin-top: 120px;
+        max-width: auto;
+        height: auto;
+    }
     .about h3 {
         margin-top: 80px;
         padding-left: 40px; 
     }
+
+    .text-section-box {
+        max-width: 85%;
+    }
     
     /* Protótipo */
-    .container-telas-web img {
-        width: 40%;
+
+    .container-prototipo h2 {
+        font-size: 36px;
+    }
+
+    .mockup h4 {
+    color: #00bf63; 
+    font-size: 20px;
+    margin-top: 15px;
+    text-align: left;
+    }
+
+    /* Mockup Web */
+    .web-mockup img {
+        max-width: 350px; 
+        
+    }
+
+    /* Mockup Mobile */
+    .mobile-mockup img {
+        max-width: 120px; 
     }
 
     /* Footer */
@@ -552,7 +581,7 @@ footer img {
     }
 }
 
-/* Mobile (Até 767px) */
+/* Tablet (Até 767px) */
 @media (max-width: 767px) {
     
     /* Header */
@@ -622,17 +651,24 @@ footer img {
         max-width: 95%;
     }
 
+    .text-section-box {
+        max-width: 80%;
+    }
+
     /* Protótipo */
     .container-prototipo h3 {
         font-size: 28px;
     }
     
-    .container-telas-web img {
-        width: 75%; 
+    /* Mockup Web */
+    .web-mockup img {
+        max-width: 350px; 
+        
     }
 
-    .container-telas-mobile img {
-        width: 32%; 
+    /* Mockup Mobile */
+    .mobile-mockup img {
+        max-width: 150px; 
     }
 
     /* Footer */
@@ -685,19 +721,17 @@ footer img {
         padding: 100px;
     }
     .about h3 {
-        font-size: 22px;
+        font-size: 28px;
     }
 
     .about p,
     .paragrafo {
-        font-size: 18px;
+        font-size: 20px;
     }
 
-    /* Protótipo Mobile: Imagens empilhadas (uma por linha) */
-    .container-telas-mobile img {
-        width: 70%; 
+    .text-section-box {
+        max-width: 100%;
     }
-
     /* Footer */
     footer {
         font-size: 12px;
